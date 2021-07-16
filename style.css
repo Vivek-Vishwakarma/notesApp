@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.heading{
+    text-align: center;
+    margin: 5px;
+}
+.Box{
+    margin: 2px 40px;
+}
+.card-body{
+    width: 100%;
+}
+.check{
+    color: blue !important;
+}
