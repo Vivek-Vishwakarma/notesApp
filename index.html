@@ -25,9 +25,8 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <form class="d-flex">
-                    <input class="form-control me-2 px-3 mx-auto" style="width: 70vw;" type="search"
+                    <input class="form-control me-2 px-3 mx-auto searchBtn" style="width: 70vw;" type="search"
                         placeholder="Search Notes ..." aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -38,13 +37,15 @@
     <div class="Box">
         <div class="mb-3">
             <label for="exampleFormControlInput1" class="form-label">Title : </label>
-            <input type="email" class="form-control titleInp" id="exampleFormControlInput1" placeholder="Enter Title Here ...">
+            <input type="text" class="form-control titleInp" id="exampleFormControlInput1" placeholder="Enter Title Here ...">
         </div>
         <div class="mb-3">
             <label for="exampleFormControlTextarea1" class="form-label">Notes : </label>
             <textarea class="form-control notesInp" id="exampleFormControlTextarea1" placeholder="Enter Notes Here ..." rows="3"></textarea>
         </div>
         <button class="btn btn-outline-success add" type="submit">Add</button>
+        <button class="btn btn-outline-danger add clear" type="submit">Clear All</button>
+
     </div>
     <hr>
     <h3 class="heading">Your Notes</h3>

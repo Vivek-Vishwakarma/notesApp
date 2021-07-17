@@ -15,5 +15,6 @@
     width: 100%;
 }
 .check{
-    color: blue !important;
+    color: rgb(28, 28, 255) !important;
+    opacity: 0.5;
 }
