@@ -1,70 +1,385 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="shortcut icon" href="myLogo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Notes App</title>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Vivek</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div> -->
+    <audio src="back.mpeg" autoplay></audio>
+    <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">V3 Notes App</a>
+            <a class="navbar-brand" href="index.html">Vivek.</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" id="top">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#skill">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About Me</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Projects
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li>
+                                <a class="dropdown-item" target="_blank" href="https://v3musicplayer.netlify.app/">Music
+                                    Player</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" target="_blank"
+                                    href="https://vivek-vishwakarma.github.io/ecommerce-web/">Ecommerce Website</a>
+                            </li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://basic-tic-tac-toe.netlify.app/">Tic-Tac-Toe</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://vivek-vishwakarma.github.io/To-Do-List/">To-Do-List</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://vivek-vishwakarma.github.io/rock-paper-scissor/">Rock-Paper-Scissor</a>
+                            </li>
+                            <li><a class="dropdown-item" target="_blank" href="https://v3-calc.netlify.app/">Simple
+                                    Calculator</a>
+                            </li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://basic-weather-webapp.netlify.app/">Weather Web App</a>
+                            </li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://vivek-vishwakarma.github.io/analog_clock/">Analog Clock</a></li>
+                            <li><a class="dropdown-item" target="_blank"
+                                    href="https://vivek-vishwakarma.github.io/AgeInDays/">Age in Days</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" target="_blank" href="https://github.com/Vivek-Vishwakarma">GitHub</a>
+                    </li>
+
+                </ul>
+                <img class="mode-icon" src="moon.svg" alt="">
                 <form class="d-flex">
-                    <input class="form-control me-2 px-3 mx-auto searchBtn" style="width: 70vw;" type="search"
-                        placeholder="Search Notes ..." aria-label="Search">
+                    <a href="#contact"><button type="button" class="btn btn-outline-success">Contact Me</button></a>
                 </form>
             </div>
         </div>
     </nav>
-    <div class="heading">
-        <h1>Notes App</h1>
-    </div>
-    <div class="Box">
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Title : </label>
-            <input type="text" class="form-control titleInp" id="exampleFormControlInput1" placeholder="Enter Title Here ...">
+    <div class="namepad">
+        <div>
+            <img src="myLogo.png" class="img-thumbnail" alt="...">
         </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Notes : </label>
-            <textarea class="form-control notesInp" id="exampleFormControlTextarea1" placeholder="Enter Notes Here ..." rows="3"></textarea>
+        <div class="namediv">
+            <h1> My Name is <span class="name">Vivek Vishwakarma</span></h1>
+            <p><strong>I'm </strong><span class="animate skillSpan"></span></p>
+            <a href="mailto:vivek.vishwakarma10022002@gmail.com"><button type="button"
+                    class="btn btn-outline-success">Hire Me &#8594;</button></a>
+            <div class="skillset">
+                <div class="icons">
+                    <a target="_blank" href="https://github.com/Vivek-Vishwakarma"><img src="git.png" alt="github"></a>
+                </div>
+                <div class="icons">
+                    <a target="_blank" href="https://twitter.com/VivekVi29882290"><img src="tweet.png"
+                            alt="twitter"></a>
+                </div>
+                <div class="icons">
+                    <a target="_blank" href="https://www.linkedin.com/in/vivek-vishwakarma-2172a519b/"><img src="li.png"
+                            alt="LinkedIn"></a>
+                </div>
+                <div class="icons">
+                    <a target="_blank" href="mailto:vivek.vishwakarma10022002@gmail.com"><img src="mail.png"
+                            alt="LinkedIn"></a>
+                </div>
+            </div>
         </div>
-        <button class="btn btn-outline-success add" type="submit">Add</button>
-        <button class="btn btn-outline-danger add clear" type="submit">Clear All</button>
+    </div>
+    <h3 class="headSkill" id="about">About Me</h3>
+    <div class="about">
+        <div class="me">
+            <img src="me.png">
+        </div>
+        <div class="ab">
+            <h3>Student at Atharva College Of Engineering</h3>
+            <p>I'm in 3rd year (2019 - 2023) of EXTC branch. I did my HSC form TP Bhatia College Of Science</p>
+            <a target="_blank" href="mailto:vivek.vishwakarma10022002@gmail.com">
+                <button type="button" style="margin: 10px;" class="btn btn-outline-success">Contact Me</button>
+            </a>
+            <a target="_blank" href="https://drive.google.com/file/d/1L33HnULQrdK4SmxdAY6AqSeNEIEqnVFs/view?usp=sharing">
+                <button type="button" style="margin: 10px;" class="btn btn-outline-primary">Download Resume &#8595;</button>
+            </a>
+            <div class="info">
+                <ul>
+                    <li>
+                        <p><i class="fas fa-arrow-right"></i><strong> Date Of Birth : </strong>10/02/2002</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-arrow-right"></i><strong> Age : </strong>19</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-arrow-right"></i><strong> Degree : </strong>Bachelor</p>
+                    </li>
+                </ul>
+                <ul>
+                    <li>
+                        <p><i class="fas fa-arrow-right"></i><strong> City : </strong>Mumbai, India</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-arrow-right"></i><strong> Phone : </strong>+91 8169453938</p>
+                    </li>
+                    <li>
+                        <p><i class="fas fa-arrow-right"></i><strong> Free Lancing : </strong>Available</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <br id="skill">
+    <div id="skills">
+        <h3 class="headSkill" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000">
+            Skills</h3>
+        <div class="sdiv" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000">
+            <img class="simg" src="html.png" alt="">
+            <img class="simg" src="css.png" alt="">
+            <img class="simg" src="js.png" alt="">
+            <img class="simg" src="py.png" alt="">
+            <img class="simg" src="vs.png" alt="">
+            <img class="simg" src="c++.png" alt="">
+            <img class="simg" src="bootstrap.png" alt="">
+            <img class="simg" src="c.png" alt="">
+        </div>
+        <h6>HTML <img src="html.png" width="30px" alt=""> :</h6>
+        <div class="progress" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000">
+            <div class="progress-bar bg-success bar" role="progressbar" style="width: 80%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">80%</div>
+        </div>
+        <br>
+        <h6>CSS <img src="css.png" width="35px" alt=""> :</h6>
+        <div class="progress" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000">
+            <div class="progress-bar  bg-success bar" role="progressbar" style="width: 75%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">75%</div>
+        </div>
+        <br>
+        <h6>JavaScript <img src="js.png" width="30px" alt=""> :</h6>
+        <div class="progress" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000">
+            <div class="progress-bar bg-warning bar" role="progressbar" style="width: 60%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">60%</div>
+        </div>
+        <br>
+        <h6>Python <img src="py.png" width="30px" alt=""> :</h6>
+        <div class="progress" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000">
+            <div class="progress-bar bg-warning bar" role="progressbar" style="width: 50%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">50%</div>
+        </div>
+        <br>
+        <h6>C++ <img src="c++.png" width="30px" alt=""> :</h6>
+        <div class="progress" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000">
+            <div class="progress-bar bg-success bar" role="progressbar" style="width: 65%;" aria-valuenow="25"
+                aria-valuemin="0" aria-valuemax="100">65%</div>
+        </div>
+        <br>
+    </div>
+    <!-- projects section -->
+    <h3 class="headSkill" id="about">Projects</h3>
+    <div class="projects" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000">
+        <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <img src="ss1.png" class="card-img-top" id="images" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Ecommerce Website (FrontEnd)</h5>
+                <p class="card-text">Basic Frontend template of Ecommerce Website with Landing Page, Cart, About & All
+                    Products page.</p>
+                <a href="https://vivek-vishwakarma.github.io/ecommerce-web/" target="_blank"
+                    class="btn btn-primary">View &#8594;</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <img src="ss2.png" class="card-img-top" id="images" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Tic-Tac-Toe</h5>
+                <p class="card-text">Tic-Tac-Toe game created using HTML 5, CSS 3(Grid) and Java Script(Logic). It also
+                    show turn and winner at top.</p>
+                <a href="https://basic-tic-tac-toe.netlify.app/" target="_blank" class="btn btn-primary">View
+                    &#8594;</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <img src="ss9.png" class="card-img-top" id="images" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Music Player</h5>
+                <p class="card-text">Simple Music Player you can skip the song or jump to next song. It also have nice
+                    animation effect. It takes music form local storage.</p>
+                <a href="https://v3musicplayer.netlify.app/" target="_blank" class="btn btn-primary">View &#8594;</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <img src="ss3.PNG" class="card-img-top" id="images" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Rock-Paper-Scissor</h5>
+                <p class="card-text">Rock-Paper-Scissor web game its fun to play and completely depends on rng(random
+                    number regenerator) as its single player.</p>
+                <a href="https://vivek-vishwakarma.github.io/rock-paper-scissor/" target="_blank"
+                    class="btn btn-primary">View &#8594;</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <img src="ss4.PNG" class="card-img-top" id="images" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">To-Do-List</h5>
+                <p class="card-text">It's a To-Do-List used to take a note of things u wanna do. I am making it better
+                    so it can store data in local storage.</p>
+                <a href="https://vivek-vishwakarma.github.io/To-Do-List/" target="_blank" class="btn btn-primary">View
+                    &#8594;</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <img src="notes.PNG" class="card-img-top" id="images" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Note App (Advanced ToDo List)</h5>
+                <p class="card-text">Advance ToDo list. It keeps data even when u reload page.</p>
+                <a href="https://vivek-vishwakarma.github.io/notesApp/" target="_blank" class="btn btn-primary">View
+                    &#8594;</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <img src="ss5.PNG" class="card-img-top" id="images" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Analog Clock</h5>
+                <p class="card-text">Analog Clock made using blank clock layout and hands are made up of css and logic
+                    using Java Script. It shows real time ofcoure.</p>
+                <a href="https://vivek-vishwakarma.github.io/analog_clock/" target="_blank" class="btn btn-primary">View
+                    &#8594;</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <img src="ss6.PNG" class="card-img-top" id="images" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Weather Web App</h5>
+                <p class="card-text">Weather App I made this using open weather api. All date is real time, recorded and
+                    send on webpage through api.</p>
+                <a href="https://basic-weather-webapp.netlify.app/" target="_blank" class="btn btn-primary">View
+                    &#8594;</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <img src="ss7.PNG" class="card-img-top" id="images" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Simple Calculator</h5>
+                <p class="card-text">Basic calculator using table in HTML and using eval function in Java Script.</p>
+                <a href="https://v3-calc.netlify.app/" target="_blank" class="btn btn-primary">View &#8594;</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50"
+            data-aos-duration="1000">
+            <img src="ss8.PNG" class="card-img-top" id="images" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Age In Days</h5>
+                <p class="card-text">Web App that will show hom many days old you are by entering birth year.</p>
+                <a href="https://vivek-vishwakarma.github.io/AgeInDays/" target="_blank" class="btn btn-primary">View
+                    &#8594;</a>
+            </div>
+        </div>
 
     </div>
-    <hr>
-    <h3 class="heading">Your Notes</h3>
-    <div id="notes" class="card Box" style="width: inherit;">
-        <div id="title"></div>
-        <!-- <div class="card-body">
-            <h5 class="card-title"></h5>
-            <p class="card-text"></p>
-            <button class="btn btn-outline-success" type="submit"><i class="fas fa-trash-alt"></i></button>
-            <button class="btn btn-outline-success" type="submit"><i class="fas fa-check"></i></button>
-        </div> -->
+
+    <br>
+    <div class="skillset" id="contact">
+        <div class="icons">
+            <a target="_blank" href="https://github.com/Vivek-Vishwakarma"><img src="git.png" alt="github"></a>
+        </div>
+        <div class="icons">
+            <a target="_blank" href="https://twitter.com/VivekVi29882290"><img src="tweet.png" alt="twitter"></a>
+        </div>
+        <div class="icons">
+            <a target="_blank" href="https://www.linkedin.com/in/vivek-vishwakarma-2172a519b/"><img src="li.png"
+                    alt="LinkedIn"></a>
+        </div>
+        <div class="icons">
+            <a target="_blank" href="mailto:vivek.vishwakarma10022002@gmail.com"><img src="mail.png" alt="LinkedIn"></a>
+        </div>
     </div>
 
+    <footer>
+        <h3><a href="#top">Go To Top &#8593;</a></h3>
+    </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+    <script src="anime.min.js"></script>
+    <script>
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+        </script>
+    <script src="typed.js"></script>
+    <script>
+        var typed = new Typed('.animate', {
+            strings: ['Frontend Webdeveloper', 'Tech Enthusiast', 'Weeb/Otaku', 'Gamer'],
+            typeSpeed: 50,
+            backSpeed: 40,
+            loop: true,
+            cursorChar: '_'
+        });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        var icon = document.querySelector(".mode-icon")
+        icon.addEventListener('click', function fun() {
+            var e = document.body;
+            e.classList.toggle('dark-mode');
+            t = document.querySelector("nav");
+            t.classList.toggle('navbar-dark');
+            if (document.body.classList.contains('dark-mode')) {
+                icon.src = "sun.svg"
+            }
+            else {
+                icon.src = "moon.svg"
+            }
+            p.style.color = "black"
+        });
 
+        
+    </script>
+
+    <script src="particles.js"></script>
     <script src="app.js"></script>
 </body>
 
